@@ -7,9 +7,8 @@
   <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-
   <title>Frontend Mentor | Results summary component</title>
-
+  <link rel="stylesheet" href="css/styles.css">
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
     .attribution {
@@ -24,49 +23,52 @@
 </head>
 
 <body>
+  <div class="card__container">
+    <div class="result__container">
+      <div class="title__main title__result">Your Result</div>
+      
+      <span class="circle">
+        <span class="big-number">76</span>
+        <span class="little-number">of 100</span>
+      </span>
+      
+      <div class="mid__title">Great</div>
+      <p>
+        You scored higher than 65% of the people who have taken these tests.
+      </p>
+    </div>
 
-  <div class="result__container">
-    <div class="title__main title__result">Your Result</div>
-    <span class="big-number">76</span>
-    <span class="little-number">of 100</span>
+    <div class="summary__container">
+      <div class="title__summary title__result">Summary</div>
+      <div class="summary__item__container">
 
-    <div class="mid__title">Great</div>
-    <p>
-      You scored higher than 65% of the people who have taken these tests.
-    </p>
-  </div>
+        <div class="summary__item bg-red">
+          Reaction
+          80 / 100
+        </div>
 
-  <div class="summary__container">
-    <div class="title__main title__result">Summary</div>
-    <div class="summary__item__container">
+        <div class="summary__item bg-yellow">
+          Memory
+          92 / 100
+        </div>
 
-      <div class="summary__item bg-red">
-        Reaction
-        80 / 100
+        <div class="summary__item bg-blue">
+          Verbal
+          61 / 100
+        </div>
+
+        <div class="summary__item bg-violet">
+          Visual
+          72 / 100
+        </div>
+
       </div>
 
-      <div class="summary__item bg-yellow">
-        Memory
-        92 / 100
-      </div>
-
-      <div class="summary__item bg-blue">
-        Verbal
-        61 / 100
-      </div>
-
-      <div class="summary__item bg-violet">
-        Visual
-        72 / 100
-      </div>
+      <div class="btn-continue btn">Continue</div>
 
     </div>
 
-    <div class="btn-continue btn">Continue</div>
-
   </div>
-
-
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
     Coded by <a href="#">Your Name Here</a>.

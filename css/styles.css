@@ -1,0 +1,73 @@
+@font-face {
+    font-family: "Hanken";
+    src: url(../assets/fonts/HankenGrotesk-VariableFont_wght.ttf);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Hanken";
+}
+html,body{
+    height: 100%;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.card__container{
+    display: flex;
+    border: 2px solid blue;
+    border-radius: .5rem ;
+    max-width: 460px;
+}
+.card__container > * {
+    padding: 6px 10px;
+    flex: 1;
+}
+
+.result__container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background : linear-gradient(180deg,rgb(104,66,254),rgb(47,43,234))
+}
+.result__container > *{
+    margin-bottom: 1.5em;
+}
+
+.summary__container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.title__result{
+    font-size: 1.3em;
+    margin-bottom: 0.7em;
+}
+
+.circle{
+    background : linear-gradient(0deg,rgb(73,54,242),rgb(47,43,234));
+    width: 8em;
+    aspect-ratio: 1/1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;   
+    border-radius: 100%;
+}
+.big-number{
+    font-size: 2.5em;
+    color:white;
+    font-weight: bold;    
+}
+.little-number{
+     color: gray;
+     font-size: 0.9em;
+}
