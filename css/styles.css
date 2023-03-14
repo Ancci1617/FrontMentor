@@ -97,11 +97,42 @@ body{
 
 }
 .summary__item{
+    padding: .5em .3em;
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 100%;
     vertical-align: text-top;
+    border-radius: .4em;
 }
+.bg-red{
+    background-color: #F553;
+}
+.bg-red .left__details{
+    color: #F55;
+}
+.left__details{
+    display: flex;
+}
+.left__details svg{
+    margin-right: .2em;
+}
+.right__details{
+    font-weight: 700;
+}
+.right__details .sobre__porcentaje{
+    color: rgb(95, 95, 95);
+}
+
+.bg-yellow{
+
+}
+
+.bg-yellow .left__details{
+    color : #FFB21E
+}
+
+
+
 
 
